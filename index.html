@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guestbook</title>
+ 
+</head>
+<body>
+  <div class="centered-content">
+    <h1>Welcome to Dilans guestbook</h1>
+    <p>   
+    Share your travel tales, explore favorite destinations, and offer tips on unique places to visit. My guestbook is your platform to share memories and inspire others with amazing adventures from around the world. Please be respectful.Thank you.
+    </p>
+    <form action="/submit" method="post" onsubmit="addTimestamp()">
+      <input type="hidden" name="Time" id="postTime">
+      <label>Name:</label><br>
+      <input type="text" name="Name"><br>
+      <label>Email:</label><br>
+      <input type="text" name="Email"><br>
+      <label>Your homepage:</label><br>
+      <input type="text" name="From"><br>
+      <label>Tel:</label><br>
+      <input type="text" name="Tel"><br>
+      <label>Comment:</label><br>
+      <textarea name="Comment" rows="4" cols="50"></textarea><br>
+      <button type="submit">Send</button>
+    </form>    
+    
+    <h3>POSTS:</h3> 
+    <div id="guestPosts">GÄSTER</div>
+  
+  </div>
+</body>
+</html>
