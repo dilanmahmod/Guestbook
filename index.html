@@ -7,13 +7,13 @@
  
 </head>
 <body>
-  <div class="centered-content">
-    <h1>Welcome to Dilans guestbook</h1>
-    <p>   
+    <h1>Welcome to Dilans guestbook</h1> <!-- Detta är en rubrik -->
+    <p>   <!-- Här skriver jag lite text  -->
     Share your travel tales, explore favorite destinations, and offer tips on unique places to visit. My guestbook is your platform to share memories and inspire others with amazing adventures from around the world. Please be respectful.Thank you.
     </p>
-    <form action="/submit" method="post" onsubmit="addTimestamp()">
-      <input type="hidden" name="Time" id="postTime">
+    <form action="/submit" method="post" onsubmit="addTimestamp()"> <!-- Formulär som skickar data till "/submit" via POST-metoden och kör "addTimestamp()" funktionen vid inlämning. -->
+      <input type="hidden" name="Time" id="postTime"> <!-- Det här elementet skapar ett dolt fält med namnet "Time" och id "postTime". Det kommer att användas för att lagra eller skicka tidsinformation i formuläret. -->
+      <!-- FORMULÄR -->
       <label>Name:</label><br>
       <input type="text" name="Name"><br>
       <label>Email:</label><br>
@@ -28,8 +28,6 @@
     </form>    
     
     <h3>POSTS:</h3> 
+    <!-- Det här är platsen där gästposter från gäster kan visas. -->
     <div id="guestPosts">GÄSTER</div>
-  
-  </div>
-</body>
 </html>
